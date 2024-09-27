@@ -20,6 +20,7 @@ body {
 }
 
 .header_warp {
+    height: 120px;
     /* display: none; */
     /* height: 8vw; */
     background-color: #f6f5ef;
@@ -115,7 +116,7 @@ body {
 /* header */
 
 .section {
-    padding-top: 100px;
+    padding-top: 120px;
     width: 100%;
 }
 
@@ -342,4 +343,29 @@ body {
     display: flex;
     align-items: end;
     justify-content: end;
+}
+
+.section .bean {
+    height: 550px;
+}
+.section .bean >img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.section .bean .bean_inner {
+    display: flex;
+    width: 70%;
+    background-color: #ddd;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    bottom: 550px;
+    justify-content: center;
+}
+
+.section .bean .bean_inner .bean_img >img{
+    width: 300px;
 }
