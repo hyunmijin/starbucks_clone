@@ -20,9 +20,12 @@ body {
 }
 
 .header_warp {
+    /* display: none; */
     /* height: 8vw; */
     background-color: #f6f5ef;
-    position: relative;
+    /* position: relative; */
+    position: fixed;
+    z-index: 100;
     width: 100%;
     border-top: 2px solid #4b0000;
     /* background-color: #fff; */
@@ -112,6 +115,7 @@ body {
 /* header */
 
 .section {
+    padding-top: 100px;
     width: 100%;
 }
 
@@ -119,6 +123,9 @@ body {
     width: 100%;
     /* background-color: #ccc; */
     /* height: 489px; */
+}
+
+.img_wrap .main_img {
 }
 
 .img_wrap .img_wrap_inner {
@@ -189,44 +196,150 @@ body {
 /* main img */
 
 .section .line_nav {
-    /* height: 60px; */
-    background-color: #000000;
+    display: flex;
+    height: 60px;
+    /* background-color: #000000; */
     width: 100%;
 }
 
-.section .line_nav .line_nav_inner {
-    height: 60px;
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-}
 .section .line_nav .not {
     display: flex;
     line-height: 4;
     color: #ffffff;
     height: 100%;
-    justify-content: space-between;
-    width: 50%;
+    /* justify-content: space-between; */
+    width:50%;
+    justify-content: end;
+    background-color: #000;
 }
 
 .section .line_nav .not .text {
     width: 20%;
-    background-color: #fff;
+    /* background-color: #fff; */
     font-weight: bold;
 }
 
 .section .line_nav .not .notice {
-    width: 70%;
-    background-color: #bd8888;
+    width: 50%;
+    line-height: 5;
+    font-size: 12px;
+    /* background-color: #bd8888; */
 }
 .section .line_nav .not .icon {
     width: 10%;
-    background-color: #993838;
-}
-.section .line_nav .promtion {
-    background-color: #785f5f;
-    width: 50%;
-    height: 100%;
+    /* background-color: #993838; */
 }
 
-.contain
+.section .line_nav .icon_1::after {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    content: url(/img/+_icon.png);
+    /* object-fit: cover; */
+}
+
+.section .line_nav .icon_1 {
+    position: relative;
+}
+
+.section .line_nav .promtion {
+    background: #f6f5ef;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    width:50%;
+}
+.section .line_nav .promtion > p {
+    width: 30%;
+    line-height: 3.5;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section .line_nav .promtion .icon_2 {
+    width: 40%;
+    position: relative;
+}
+
+.section .line_nav .promtion .icon_2::after {
+    position: absolute;
+    content: url(/img/check_icon.png);
+    left: 40px;
+    bottom: 10px;
+}
+
+.section .rewards {
+    display: flex;
+    background-color: #1e3932;
+    height: 250px;
+    color: #fff;
+}
+
+.section .rewards .rewards_inner {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.section .rewards .rewards_inner .rewards_logo {
+    /* background-color: #fff; */
+
+}
+.section .rewards .rewards_inner .rewards_logo >img {
+    /* background-image: url(/img/rewards-logo.png); */
+    width: 180px;
+}
+
+.section .rewards .rewards_inner .rewards_text {
+    width: 100%;
+    padding-left: 35px;
+}
+
+.section .rewards .rewards_inner .rewards_text .rewards_text1 {
+    height: 10%;
+    font-size: 26px;
+    padding-bottom: 15px;
+    /* background-color: red; */
+}
+.section .rewards .rewards_inner .rewards_text .rewards_text2 {
+    height: 30%;
+    display: flex;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+    /* background-color: rgb(138, 74, 74); */
+}
+
+.section .rewards .rewards_inner .rewards_text .rewards_text2 .text {
+    font-size: 17px;
+}
+
+.section .rewards .rewards_inner .rewards_text .rewards_text2 .btn {
+    align-items: end;
+    display: flex;
+    /* background-color: #fff; */
+    justify-content: end;
+    width: 37%;
+} 
+.section .rewards .rewards_inner .rewards_text .rewards_text3 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: end;
+
+    /* background-color: rgb(157, 129, 129); */
+}
+
+.section .rewards .rewards_inner .rewards_text .rewards_text3 .text {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.section .rewards .rewards_inner .rewards_text .rewards_text3 .btn {
+    width: 28%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
